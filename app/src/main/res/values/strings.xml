@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ClimateChange</string>
+    <string name="main">main</string>
+    <string name="trash">trash</string>
+    <string name="tree">tree</string>
+    <string name="trashreward">reward</string>
+    <string name="trashtext">trash</string>
+    <string name="treereward">reward</string>
+    <string name="treetext">tree</string>
+    <string name="reward">reward</string>
+    <string name="options">options</string>
+</resources>
