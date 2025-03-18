@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class treeActivity extends AppCompatActivity {
-
+String str;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +20,15 @@ public class treeActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            Intent g=getIntent();
+            str=g.getStringExtra("FullName");
             return insets;
         });
     }
 
     public void treeTOreward(View view) {
         Intent in=new Intent(this,rewardActivity.class);
+        in.putExtra("FullName",str);
         startActivity(in);
         finish();
     }

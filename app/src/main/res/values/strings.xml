@@ -9,4 +9,7 @@
     <string name="treetext">tree</string>
     <string name="reward">reward</string>
     <string name="options">options</string>
+    <string name="selection">selection</string>
+
+
 </resources>
