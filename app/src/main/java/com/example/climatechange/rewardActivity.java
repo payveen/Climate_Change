@@ -12,7 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class rewardActivity extends AppCompatActivity {
-TextView getname;
+TextView getname ,select;
+String name,selection;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +24,12 @@ TextView getname;
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             getname=findViewById(R.id.g_name);
+            select=findViewById(R.id.select);
             Intent g=getIntent();
-            getname.setText(g.getStringExtra("FullName"));
+            name=g.getStringExtra("FullName");
+            getname.setText(name);
+            selection=g.getStringExtra("select");
+            select.setText( selection);
             return insets;
 
         });
