@@ -3,6 +3,7 @@ package com.example.climatechange;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.view.View;
 import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
@@ -13,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class rewardActivity extends AppCompatActivity {
 TextView getname ,select;
-String name,selection;
+String name,selection,m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +30,17 @@ String name,selection;
             name=g.getStringExtra("FullName");
             getname.setText(name);
             selection=g.getStringExtra("select");
-            select.setText( selection);
+           m=g.getStringExtra("money");
+
             return insets;
 
         });
 
     }
 
+    public void again(View view) {
+        Intent in=new Intent(this,MainActivity.class);
+        startActivity(in);
+        finish();
+    }
 }

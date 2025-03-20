@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".rewardActivity">
+    android:onClick="rewardTOmain"
+    tools:context=".rewardActivity"
+    tools:ignore="OnClick">
 
     <TextView
         android:id="@+id/textView"
@@ -30,14 +32,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/select"
+    <Button
+        android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="456dp"
-        android:text="TextView"
+        android:layout_marginTop="380dp"
+
+        android:onClick="again"
+        android:text="again"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
