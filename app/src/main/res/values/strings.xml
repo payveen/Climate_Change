@@ -9,4 +9,12 @@
     <string name="treetext">tree</string>
     <string name="reward">reward</string>
     <string name="options">options</string>
+    <string name="selection">selection</string>
+    <string name="plastic">plastic</string>
+    <string name="paper">paper</string>
+    <string name="metal">metal</string>
+    <string name="plastics">plastics</string>
+    <string name="glass">glass</string>
+
+
 </resources>
