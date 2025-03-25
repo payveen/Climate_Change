@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class rewardActivity extends AppCompatActivity {
 TextView getname;
-    TextView select;
+TextView select;
 String selection,name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,44 +5,53 @@
     android:id="@+id/paper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D3F0D2"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="120dp"
-        android:text="@string/main"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="111dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#FFFFFF"
         android:onClick="mainTOselection"
-        android:text="@string/options"
+        android:text="Join Us"
+        android:textColor="#3F9D2F"
+        android:textColorLink="#ff6750a4"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintVertical_bias="0.778" />
 
     <EditText
         android:id="@+id/setname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="232dp"
-        android:autofillHints="enter"
+        android:layout_width="275dp"
+        android:layout_height="41dp"
+        android:autofillHints="Enter Name"
         android:ellipsize="start"
         android:ems="10"
-        android:hint="Name"
+        android:hint="Enter Name"
         android:inputType="text"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652"
         tools:ignore="HardcodedText,LabelFor" />
+
+    <ImageView
+        android:id="@+id/ImageView2"
+        android:layout_width="406dp"
+        android:layout_height="285dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244"
+        tools:srcCompat="@drawable/cc1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
