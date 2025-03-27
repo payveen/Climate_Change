@@ -89,13 +89,15 @@
         app:layout_constraintVertical_bias="0.437" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/countbags"
         android:layout_width="292dp"
         android:layout_height="50dp"
         android:ellipsize="start"
         android:ems="10"
         android:hint="Enter Number"
         android:inputType="text"
+        android:textColor="#4CAF50"
+        android:textColorHint="#5D5D5D"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,22 +109,25 @@
         android:id="@+id/imageView"
         android:layout_width="130dp"
         android:layout_height="116dp"
-        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
 
+        android:contentDescription="@string/todoo"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
         app:layout_constraintHorizontal_bias="0.274"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.183"
+        app:srcCompat="@drawable/cc4"
         tools:srcCompat="@drawable/cc4" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="130dp"
         android:layout_height="116dp"
+        android:contentDescription="@string/todooo"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,12 +135,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.196"
+        app:srcCompat="@drawable/cc5"
         tools:srcCompat="@drawable/cc5" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="130dp"
         android:layout_height="116dp"
+        android:contentDescription="@string/todoooo"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -143,12 +150,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/cc6"
         tools:srcCompat="@drawable/cc6" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="130dp"
         android:layout_height="116dp"
+        android:contentDescription="@string/todooooo"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,6 +165,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/cc7"
         tools:srcCompat="@drawable/cc7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

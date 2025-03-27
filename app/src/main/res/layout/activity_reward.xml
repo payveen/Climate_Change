@@ -11,58 +11,61 @@
     tools:ignore="OnClick">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/show_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Thank You"
+        android:textAlignment="center"
         android:textColor="#3F9D2F"
         android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
-
-    <Button
-        android:id="@+id/select"
-        android:layout_width="208dp"
-        android:layout_height="58dp"
-        android:backgroundTint="#FFFFFF"
-        android:onClick="again"
-        android:text="Try To Get Gold"
-        android:textColor="#3F9D2F"
-        android:textColorLink="#ff6750a4"
-        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
+        app:layout_constraintVertical_bias="0.263" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="209dp"
+        android:layout_height="127dp"
+        android:backgroundTint="#3F94D399"
+        android:contentDescription="@string/todooooo"
+        android:onClick="again"
+        android:textAlignment="center"
+        android:textColor="#494B49"
+        android:textColorLink="#ff6750a4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.743"
+        app:strokeColor="#43A047"
+        app:strokeWidth="3dp" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/sometext"
         android:layout_width="271dp"
         android:layout_height="73dp"
-        android:text="Your Kindness truly makes a difference."
-        android:textColor="#3F9D2F"
+        android:text="Your Kindness truly makes a difference"
+        android:textAlignment="center"
+        android:textColor="#43A047"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.657"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintVertical_bias="0.425" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/reward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="YOU GOT SILVER!"
-        android:textColor="#3F9D2F"
+        android:textAlignment="center"
+        android:textColor="#34A8E2"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

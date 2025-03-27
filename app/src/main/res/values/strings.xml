@@ -15,6 +15,14 @@
     <string name="metal">metal</string>
     <string name="plastics">plastics</string>
     <string name="glass">glass</string>
+    <string name="collect_bag">Collect Bag</string>
+    <string name="gift_tree">Gift Tree</string>
+    <string name="todo">TODO</string>
+    <string name="todoo">TODO</string>
+    <string name="todooo">TODO</string>
+    <string name="todoooo">TODO</string>
+    <string name="todooooo">TODO</string>
+    <string name="join_us">Join Us</string>
 
 
 </resources>

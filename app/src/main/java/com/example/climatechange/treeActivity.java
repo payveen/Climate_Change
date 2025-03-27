@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class treeActivity extends AppCompatActivity {
 String str;
 String selection, money="";
-    EditText counter;
+    EditText count_money;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +32,9 @@ String selection, money="";
         });
     }
 
-    public void treeTOreward(View view) {
-
-        counter=findViewById(R.id.counter);
-      money=counter.getText().toString();
+    public void to_reward(View view) {
+        count_money=findViewById(R.id.money_num);
+        money=count_money.getText().toString();
 
         Intent in=new Intent(this,rewardActivity.class);
         in.putExtra("FullName",str);

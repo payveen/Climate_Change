@@ -3,6 +3,7 @@ package com.example.climatechange;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.CheckBox;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class trashActivity extends AppCompatActivity {
 String str;
 String selection;
+    EditText cbag;
     CheckBox plastic , metal ,glass , paper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,20 +31,24 @@ String selection;
             metal=findViewById(R.id.metal);
             glass=findViewById(R.id.glass);
             paper=findViewById(R.id.paper);
+
             return insets;
         });
     }
-String checkall="";
+String checkall="",bagnum="";
     public void trashTOreward(View view) {
+        cbag=findViewById(R.id.countbags);
+        bagnum=cbag.getText().toString();
         if(plastic.isChecked()){checkall=checkall+"/plastic/";}
         if(metal.isChecked()){checkall=checkall+"/metal/";}
         if(glass.isChecked()){checkall=checkall+"/glass/";}
         if(paper.isChecked()){checkall=checkall+"/paper/";}
 
         Intent in=new Intent(this,rewardActivity.class);
-        in.putExtra("SelectedType",checkall);
+        in.putExtra("SelectedTypeTrash",checkall);
         in.putExtra("FullName",str);
         in.putExtra("select",selection);
+        in.putExtra("num_bags",bagnum);
         startActivity(in);
         finish();
     }
