@@ -2,6 +2,7 @@ package com.example.climatechange;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
@@ -23,9 +24,13 @@ String selection,name;
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.paper), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
             getname=findViewById(R.id.name);
 
             select=findViewById(R.id.g_name);
+            String text ="<font color=#717171>silver!</font>";
+            select.setText(Html.fromHtml(text));
+
             Intent g=getIntent();
             if((g.getStringExtra("SelectedType")!=null))
             {

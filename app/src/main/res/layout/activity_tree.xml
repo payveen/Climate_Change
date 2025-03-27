@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.765" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/counter"
         android:layout_width="274dp"
         android:layout_height="41dp"
         android:ellipsize="start"
