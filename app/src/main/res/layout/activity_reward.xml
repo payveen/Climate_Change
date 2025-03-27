@@ -29,7 +29,7 @@
         android:id="@+id/select"
         android:layout_width="208dp"
         android:layout_height="58dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#FFEB3B"
         android:onClick="again"
         android:text="Try To Get Gold"
         android:textColor="#3F9D2F"
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.387" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/g_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="YOU GOT SILVER!"
