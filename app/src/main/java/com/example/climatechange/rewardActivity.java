@@ -75,6 +75,7 @@ if(selection.equals("collecting_trash")){
     }
     else if(b >= 3 && b < 8){
         String text ="<font color=#FDD835>YOU GOT GOLD!</font>";
+        rew.setText(Html.fromHtml(text));
         String text2 ="<font color=#FDD835>Try To Get Diamond</font>";
         btnreward.setText(Html.fromHtml(text2));
     }
