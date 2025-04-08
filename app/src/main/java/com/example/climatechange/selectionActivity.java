@@ -47,4 +47,13 @@ String selection="";
         startActivity(in);
         finish();
     }
+
+    public void To_info(View view) {
+        selection="information";
+        Intent in=new Intent(this,infoActivity.class);
+        in.putExtra("FullName",str);
+        in.putExtra("select",selection);
+        startActivity(in);
+        finish();
+    }
 }
